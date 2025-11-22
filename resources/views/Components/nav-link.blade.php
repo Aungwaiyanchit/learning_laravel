@@ -1,4 +1,4 @@
-@props(['active' => false])
+@props(['active' => false, 'type' => 'a'])
 
 @php
     $classes = $active ? 'bg-white/5 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white';
