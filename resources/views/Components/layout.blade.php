@@ -82,8 +82,9 @@
 
 
     <header class="bg-gray-800 shadow">
-        <div class="mx-auto mx-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div class="mx-auto mx-w-7xl px-4 py-6 sm:px-6 lg:px-8 flex justify-between">
             <h2 class="text-3xl font-semibold text-white tracking-tight">{{ $heading }}</h2>
+            <x-button href="/jobs/create">Create Job</x-button>
         </div>
     </header>
 
