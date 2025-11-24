@@ -63,7 +63,7 @@ class JobController extends Controller
             'salary' => request('salary'),
         ]);
 
-        return redirect('/jobs/'.$job->id .'edit');
+        return redirect('/jobs/'.$job->id);
     }
 
     public function destory(Job $job)
