@@ -12,7 +12,7 @@
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <x-form-field>
                         <x-form-label for="name">Username</x-form-label>
-                        <x-form-input name="name" id="name" placeholder="username" :value="old('name)" required />
+                        <x-form-input name="name" id="name" placeholder="username" :value="old('name')" required />
                         <x-form-error name="name" />
                     </x-form-field>
 

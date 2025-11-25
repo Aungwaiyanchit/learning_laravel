@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Job;
+use Illuminate\Support\Facades\Gate;
 
 class JobController extends Controller
 {
     public function index()
     {
-        $jobs = Job::with('employer')->latest()->cursorPaginate(5);
+        $jobs = Job::with('employer')->latest('id')->cursorPaginate(5);
 
         return view('jobs.index', [
             'jobs' => $jobs,
@@ -69,6 +70,7 @@ class JobController extends Controller
     public function destory(Job $job)
     {
         $job->delete();
+
         return redirect('/jobs');
     }
 }
